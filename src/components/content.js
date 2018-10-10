@@ -7,7 +7,7 @@ export default class Content extends Component {
         <div className="absolute content-container">
             <p className="h1 title">{ this.props.data.title }</p>
             <p className="desciption">{ this.props.data.content }</p>
-            <div className="button p2 h6 center">{ this.props.data.button }</div>
+            <p className="button p2 center">{ this.props.data.button }</p>
         </div>
     );
   }
