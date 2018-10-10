@@ -23,9 +23,9 @@ export default class Slider extends Component {
             <div className="slider mt4">
                 <div className="bg absolute" style={{ backgroundColor: "rgb(239, 239, 239)", backfaceVisibility: "visible" }}></div>
                 <Flickity options={flickityOptions} flickityRef={c => this.flkty = c}>
-                    <div class="carousel-cell" style={{backgroundImage: `url(${maya})`, backgroundColor: "rbg(239, 239, 239)"}}></div>
-                    <div class="carousel-cell" style={{ backgroundImage: `url(${alejandra})`, backgroundColor: "rbg(239, 239, 239)"}}></div>
-                    <div class="carousel-cell" style={{ backgroundImage: `url(${julia})`, backgroundColor: "rbg(239, 239, 239)"}}></div>
+                    <div className="carousel-cell" style={{backgroundImage: `url(${maya})`, backgroundColor: "rbg(239, 239, 239)"}}></div>
+                    <div className="carousel-cell" style={{ backgroundImage: `url(${alejandra})`, backgroundColor: "rbg(239, 239, 239)"}}></div>
+                    <div className="carousel-cell" style={{ backgroundImage: `url(${julia})`, backgroundColor: "rbg(239, 239, 239)"}}></div>
                 </Flickity>
             </div>
         )
