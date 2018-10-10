@@ -1,16 +1,13 @@
 .slider {
-  height: 75vh;
   margin-left: 20%;
 }
 
 .bg {
-  height: 75vh;
   width: 100%;
 }
 .carousel-cell {
   background-color: var(--lightGrey);
   width: 100%;
-  height: 75vh;
   counter-increment: carousel-cell;
   background-position: center;
   background-size: cover;
@@ -103,18 +100,18 @@
     }
 
     .bg {
-      height: 50vh;
+      /* height: 50vh; */
     }
 
     .slider {
       margin-left: 0px;
-      height: 50vh;
+      /* height: 50vh; */
 
     }
 
     .carousel-cell {
       width: 100%;
-      height: 50vh;
+      /* height: 50vh; */
     }
 
     .flickity-prev-next-button {

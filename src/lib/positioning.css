@@ -1,1 +1,9 @@
+.main-height {
+    height: 75vh;
+}
 
+@media only screen and (max-width: 660px) {
+    .main-height {
+      height: 50vh;
+    }
+}
