@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 export default class Content extends Component {
   render() {
-    console.log(this.props.data)
     return (
         <div className="absolute content-container">
             <p className="h1 title">{ this.props.data.title }</p>

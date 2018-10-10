@@ -5,7 +5,7 @@ import maya from '../images/maya.jpg'
 import alejandra from '../images/alejandra.jpg'
 import julia from '../images/julia.jpg'
 
-var flickityOptions = { "freeScroll": false, "contain": true, "prevNextButtons": true, "pageDots": false }
+var flickityOptions = { "freeScroll": false, "contain": true, "prevNextButtons": true, "pageDots": false, "draggable": false, "accessibility": true }
 
 
 export default class Slider extends Component {
@@ -22,7 +22,7 @@ export default class Slider extends Component {
         return(
             <div className="slider my4">
                 <Flickity options={flickityOptions} flickityRef={c => this.flkty = c}>
-                    <div class="carousel-cell" style={{ backgroundImage: `url(${maya})`}}></div>
+                    <div class="carousel-cell" style={{backgroundImage: `url(${maya})`}}></div>
                     <div class="carousel-cell" style={{backgroundImage: `url(${alejandra})`}}></div>
                     <div class="carousel-cell" style={{backgroundImage: `url(${julia})`}}></div>
                 </Flickity>
