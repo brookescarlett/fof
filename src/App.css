@@ -18,11 +18,6 @@
   animation: changeImage 1s ease-in-out;
 }
 
-@keyframes changeImage {
-  from { background-image:  none; opacity: 0 }
-  to { background-image: inherit; opacity: 1 }
-}
-
 .carousel-cell.is-selected {
   opacity: 1;
   z-index: 0;
@@ -30,6 +25,11 @@
   position: absolute;
   transition: opacity 1s ease-in-out;
   animation: changeImage 1s ease-in-out;
+}
+
+@keyframes changeImage {
+  from { background-image:  none; opacity: 0 }
+  to { background-image: inherit; opacity: 1 }
 }
 
 .flickity-prev-next-button {
@@ -51,7 +51,7 @@
 }
 
 .next {
-  margin-top: 27vh;
+  margin-top: 26.1vh;
 }
 
 .previous {
@@ -72,8 +72,8 @@
 }
 
 .title {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
+  /* font-size: 2em; */
+  /* margin-bottom: 0.5em; */
   
 }
 
@@ -99,23 +99,15 @@
       float: left;
     }
 
-    .bg {
-      /* height: 50vh; */
-    }
-
     .slider {
       margin-left: 0px;
-      /* height: 50vh; */
-
     }
 
     .carousel-cell {
       width: 100%;
-      /* height: 50vh; */
     }
 
     .flickity-prev-next-button {
-      /* left: 0px; */
       position: fixed;
       left: auto !important;
       right: 0;
@@ -125,7 +117,6 @@
       border-radius: 0px;
       border: 0px;
       padding: 0px;
-      /* margin-top: 0px; */
     }
 
     .next {

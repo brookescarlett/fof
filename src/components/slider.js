@@ -20,7 +20,7 @@ export default class Slider extends Component {
 
     render(){
         return(
-            <div className="slider mt4 main-height">
+            <div className="slider mt3 ml4 main-height">
                 <div className="bg absolute main-height" style={{ backgroundColor: "rgb(239, 239, 239)", backfaceVisibility: "visible" }}></div>
                 <Flickity options={flickityOptions} flickityRef={c => this.flkty = c}>
                     <div className="carousel-cell main-height" style={{backgroundImage: `url(${maya})`, backgroundColor: "rbg(239, 239, 239)"}}></div>
