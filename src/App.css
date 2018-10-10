@@ -38,8 +38,8 @@
 .flickity-prev-next-button {
   left: 0px;
   right: 0px;
-  width: 5vh;
-  height: 5vh;
+  width: 7.5vh;
+  height: 7.5vh;
   background: var(--darkGrey);
   border-radius: 0px;
   border: 0px;
@@ -53,12 +53,12 @@
   background: var(--black);
 }
 
-.next{
-  margin-top: 30vh;
+.next {
+  margin-top: 27vh;
 }
 
-.previous{
-  margin-top: 35vh;
+.previous {
+  margin-top: 33.5vh;
   left: 0px !important;
 }
 
