@@ -15,12 +15,10 @@ export default class Slider extends Component {
     componentDidMount = () => {
         this.flkty.on('change', () => {
             this.props.changeDisplay(this.flkty.selectedIndex)
-            console.log(`current index is ${this.flkty.selectedIndex}`)
         })
     }
 
     render(){
-        console.log(this.props.data.imageUrl)
         return(
             <div className="slider mt4">
                 <div className="bg absolute" style={{ backgroundColor: "rgb(239, 239, 239)", backfaceVisibility: "visible" }}></div>

@@ -7,7 +7,7 @@ import { data } from './api/data'
 
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
 
   constructor() {
     super()
@@ -19,7 +19,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(data)
     return (
      <div className="layout fixed top-0 left-0 right-0">
         <Slider data={data[this.state.display]} changeDisplay={this.changeDisplay}/>
@@ -28,5 +27,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
