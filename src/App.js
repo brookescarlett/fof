@@ -21,9 +21,9 @@ class App extends Component {
   render() {
     console.log(data)
     return (
-     <div className="fixed top-0 left-0 right-0 bottom-0">
-        <Content data={data[this.state.display]}  />
+     <div className="layout fixed top-0 left-0 right-0">
         <Slider data={data[this.state.display]} changeDisplay={this.changeDisplay}/>
+        <Content data={data[this.state.display]}  />
      </div>
     );
   }

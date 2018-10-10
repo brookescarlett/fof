@@ -46,22 +46,10 @@
   opacity: 1;
   z-index: 0;
   padding: 0px;
+  position: absolute;
   /* transition: opacity 1s ease-in-out; */
   animation: changeImage 2s ease-in-out;
-
-
-
 }
-
-/* cell number */
-/* .carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-} */
 
 .flickity-prev-next-button {
   left: 0px;
@@ -71,7 +59,6 @@
   background: rgb(48, 51, 57);
   border-radius: 0px;
   border: 0px;
-  /* margin-top: 35vh; */
 }
 
 .flickity-prev-next-button:disabled {
@@ -121,4 +108,68 @@
 .button:hover {
   background-color: rgb(48, 51, 57);
   color: white;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 660px) {
+    .layout {
+      float: left;
+    }
+
+    .bg {
+      height: 50vh;
+    }
+
+    .slider {
+      margin-left: 0px;
+      height: 50vh;
+
+    }
+
+    .carousel-cell {
+      width: 100%;
+      height: 50vh;
+    }
+
+    .flickity-prev-next-button {
+      /* left: 0px; */
+      position: fixed;
+      left: auto !important;
+      right: 0;
+      width: 5vh;
+      height: 5vh;
+      background: rgb(48, 51, 57);
+      border-radius: 0px;
+      border: 0px;
+      padding: 0px;
+      /* margin-top: 0px; */
+    }
+
+    .next {
+      right: 0px !important;
+      margin: 0vh;
+    }
+
+    .previous {
+      margin-top: 5vh;
+    }
+    
+
+    .content-container {
+      position: relative;
+      margin: 0px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .description {
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: center;
+    }
 }
