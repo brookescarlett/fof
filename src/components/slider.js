@@ -11,7 +11,7 @@ export default class Slider extends Component {
         return(
             <div className="slider my4">
                 <Flickity options={flickityOptions}>
-                   <div class="carousel-cell" style={{backgroundImage: `url(${img})`}}></div>
+                    <div class="carousel-cell" style={{backgroundImage: `url(${img})`}}></div>
                     <div class="carousel-cell" style={{backgroundImage: `url(${img})`}}></div>
                     <div class="carousel-cell" style={{backgroundImage: `url(${img})`}}></div>
                 </Flickity>
