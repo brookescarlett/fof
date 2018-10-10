@@ -1,5 +1,5 @@
 .slider {
-  background-color: purple;
+  background-color: rbg(239, 239, 239);
   height: 75vh;
   margin-left: 25%;
 }
@@ -15,18 +15,20 @@
   z-index: -1;
 }
 
-.slide.is-selected {
-  opacity: 1;
-  z-index: 0
-}
-
-
 .carousel-cell {
   width: 100%;
   height: 75vh;
   counter-increment: carousel-cell;
   background-position: center;
   background-size: contain;
+  z-index: -1;  
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-cell.is-selected {
+  opacity: 1;
+  z-index: 0
 }
 
 /* cell number */
