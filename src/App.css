@@ -1,7 +1,22 @@
+@font-face {
+  font-family: 'Freight Display Pro Book';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('./fonts/freightdispprobook-webfont.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Apercu Medium';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('./fonts/Apercu-Medium.ttf') format('truetype')
+}
 .slider {
   background-color: rbg(239, 239, 239);
   height: 75vh;
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 .carousel-cell {
@@ -62,4 +77,29 @@
 
 .flickity-prev-next-button .arrow {
   fill: rgb(239, 239, 239);
+}
+
+.content-container {
+  font-family: "Freight Display Pro Book";
+  margin-top: 20vh;
+  margin-left: 10.5%;
+  z-index: 5;
+  width: 30%;
+}
+
+.title {
+  font-size: 2.5em;
+}
+
+.button {
+  font-family: 'Apercu Medium';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid rgb(48, 51, 57);
+  width: 50%;
+}
+
+.button:hover {
+  background-color: rgb(48, 51, 57);
+  color: white;
 }
